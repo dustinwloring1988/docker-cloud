@@ -1,0 +1,11 @@
+version: "2.3"
+
+services:
+  privatebin:
+    image: privatebin/nginx-fpm-alpine:latest
+    environment:
+      - TZ=America/New_York
+    volumes:
+      - "privatebin_data:/srv/data"
+    restart: unless-stopped
+
