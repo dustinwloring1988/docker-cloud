@@ -1,0 +1,8 @@
+version 2
+services
+  remotely
+    image translucencyremotelylatest
+    ports
+      - 50005000
+    volumes
+      - remotely-dataremotely-data
